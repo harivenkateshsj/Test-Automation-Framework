@@ -13,7 +13,8 @@ public class PropertiesUtil {
 	public static String readProperty(Env env,String propertyName) {
 		// TODO Auto-generated method stub
 		System.out.println(System.getProperty("user.dir"));
-		File propFile = new File(System.getProperty("user.dir")+"\\config\\"+env+".properties");
+		//File propFile = new File(System.getProperty("user.dir")+"\\config\\"+env+".properties"); //no backward slash
+		File propFile = new File(System.getProperty("user.dir")+"//config//"+env+".properties"); //only forward slash
 		FileReader fileReader = null;
 		Properties properties = new Properties();
 		try {

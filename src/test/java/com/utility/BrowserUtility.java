@@ -162,7 +162,8 @@ public abstract class BrowserUtility {
 		Date date = new Date(); //to print timestamp
 		SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss"); //to print timestamp
 		String timestamp = format.format(date); //to print timestamp
-		String path = System.getProperty("user.dir")+"//screenshots//"+name+" - "+ timestamp + ".png";
+		//String path = System.getProperty("user.dir")+"//screenshots//"+name+" - "+ timestamp + ".png"; //this is obsolete path so commented
+		String path = "./screenshots/"+name+" - "+ timestamp + ".png"; //this is relative path
 		File screenshotFile = new File(path);
 		try {
 			FileUtils.copyFile(ScreenshotData,screenshotFile);
