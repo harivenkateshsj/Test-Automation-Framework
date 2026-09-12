@@ -49,6 +49,7 @@ jobs:
        path: report.html
 
     - name: Test Execution Status
+      if: always()
       run: echo "Test Execution Completed"
 
     - name: Copy Report to gh-pages Folder
@@ -56,8 +57,8 @@ jobs:
 
       run: |
         mkdir -p public/extent-reports
-        cp -R report.html public/extent-reports/
-        cp -R screenshots/ public/extent-reports/screenshots/
+        cp -R report.html  public/extent-reports/
+        cp -R screenshots/  public/extent-reports/screenshots/
         ls -l
 
     - name: Deploy
@@ -65,5 +66,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4.8.0
       with:
         folder: public/extent-reports/
-        token: ${{ secrets.github actions }}
+        token: ${{ secrets.githubActions }}
         clean: true
