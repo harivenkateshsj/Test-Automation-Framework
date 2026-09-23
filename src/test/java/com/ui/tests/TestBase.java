@@ -41,13 +41,13 @@ public class TestBase {
 		return homePage;
 	}
 	
-//	@AfterMethod(description="Tear down the browser")
-//	public void tearDown() {
-//	if(isLamdaTest) {
-//		LamdaTestUtlity.quitSession(); //quit the local session on lamdaTest (Cloud)
-//	}
-//	else {
-//		homePage.quit(); //local session
-//	}
-//	}
+	@AfterMethod(description="Tear down the browser")
+	public void tearDown() {
+	if(isLamdaTest) {
+		LamdaTestUtlity.quitSession(); //quit the local session on lamdaTest (Cloud)
+	}
+	else {
+		homePage.quit(); //local session
+	}
+	}
 }
