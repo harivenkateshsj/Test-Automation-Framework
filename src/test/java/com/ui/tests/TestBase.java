@@ -24,7 +24,7 @@ public class TestBase {
 	
 	@Parameters({"browser","isLamdaTest","isHeadless"})
 	@BeforeMethod(description="Load the Homepage of the website")
-	public void setup(@Optional("chrome") String browser, @Optional("false") boolean isLamdaTest, @Optional("true") boolean isHeadless, ITestResult result) {
+	public void setup(@Optional("chrome") String browser, @Optional("false") boolean isLamdaTest, @Optional("false") boolean isHeadless, ITestResult result) {
 		this.isLamdaTest=isLamdaTest;
 		WebDriver lamdaDriver;
 		if(isLamdaTest) {
@@ -41,13 +41,13 @@ public class TestBase {
 		return homePage;
 	}
 	
-	@AfterMethod(description="Tear down the browser")
-	public void tearDown() {
-	if(isLamdaTest) {
-		LamdaTestUtlity.quitSession(); //quit the local session on lamdaTest (Cloud)
-	}
-	else {
-		homePage.quit(); //local session
-	}
-	}
+//	@AfterMethod(description="Tear down the browser")
+//	public void tearDown() {
+//	if(isLamdaTest) {
+//		LamdaTestUtlity.quitSession(); //quit the local session on lamdaTest (Cloud)
+//	}
+//	else {
+//		homePage.quit(); //local session
+//	}
+//	}
 }
