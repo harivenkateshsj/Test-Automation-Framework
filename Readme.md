@@ -9,13 +9,13 @@ A scalable, maintainable, and configurable Java-based UI test automation framewo
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sjhari/)
 
 ## 🚀 About Me
-Hello! I'm Harivenkatesh, an Automation Testing and DevOps professional with over 6 years of experience in designing, developing, and maintaining scalable, robust test automation frameworks and CI/CD solutions.
+Hello! I'm Harivenkatesh, an Automation Testing professional with over 6 years of experience in designing, developing, and maintaining scalable, robust test automation frameworks and CI/CD solutions.
 
 ## Technical Skills
-UI Automation: Selenium WebDriver, Playwright
-API Testing: Rest Assured, Postman
-Mobile Automation: Appium
-DevOps & CI/CD: Experience in automating build, test, and deployment workflows
+- UI Automation: Selenium WebDriver, Playwright
+- API Testing: Rest Assured, Postman
+- Mobile Automation: Appium
+- DevOps & CI/CD: Experience in automating build, test, and deployment workflows
 I am passionate about delivering high-quality software through efficient test automation, continuous integration, and modern DevOps practices. I specialize in building scalable, maintainable, and reliable automation frameworks, optimizing testing processes, and enabling faster, more dependable software delivery pipelines.
 
 ## Prerequisite
