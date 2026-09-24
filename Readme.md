@@ -81,7 +81,7 @@ mvn test -X -Dbrowser=chrome -DisLamdaTest=false -DisHeadless=false`
 The report contains information on test cases executed, passed, failed, and skipped, along with screenshots for failed tests.
 
 ## Logs
-Logs are created during the test execution and stored in the ./ logs/ directory.
+Logs are created during the test execution and stored in the ./logs/directory.
 
 ## Integrated the project Github Actions
 This automation framework is integrated with github actions. The tests will be executed at 11:30PM IST every day.
