@@ -66,15 +66,15 @@ Before running this framework, ensure the following software is installed on you
 **Clone the Repository:**
 `bash
 git clone https://github.com/harivenkateshsj/Test-Automation-Framework.git
-cd Test-Automation-Framework
-**Running Tests on LambdaTest:'
-bash
+cd Test-Automation-Framework`
+**Running Tests on LambdaTest:**
+`bash
 mvn test
-mvn test -X -Dbrowser=chrome -DisLamdaTest=true -DisHeadless=false
+mvn test -X -Dbrowser=chrome -DisLamdaTest=true -DisHeadless=false`
 **Running Tests on Chrome browser on Local Machine in Headless Mode:**
-bash
+`bash
 mvn test
-mvn test -X -Dbrowser=chrome -DisLamdaTest=false -DisHeadless=false
+mvn test -X -Dbrowser=chrome -DisLamdaTest=false -DisHeadless=false`
 
 ## Reports 
 -Reports: After execution, a detailed HTML report will be generated at ./report.html.
